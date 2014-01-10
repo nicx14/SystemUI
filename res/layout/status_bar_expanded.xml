@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.ExpandedView android:orientation="vertical" android:focusable="true" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <include android:id="@id/spaceybeaneyheader" android:layout_width="fill_parent" android:layout_height="48.0dip" layout="@layout/jb_headerview" />
+    </RelativeLayout>
+    <com.spacecaker.SpaceLayOut android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <AnalogClock android:id="@id/potatoclock" android:layout_width="5.0px" android:layout_height="5.0px" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/quickpanel_quick_settings_space" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/qp_layout" />
+            <include layout="@layout/qp_brightness" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ScrollView android:id="@id/scroll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls">
+                    <com.android.systemui.statusbar.NotificationLinearLayout android:orientation="vertical" android:id="@id/notificationLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.StatusBar.Title" android:background="@drawable/shade_bgcolor" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="Notifications" />
+                        <TextView android:textAppearance="@style/TextAppearance.StatusBar.Title" android:textColor="#ffeeee00" android:id="@id/noNotificationsTitle" android:background="@drawable/shade_header_background" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/status_bar_no_notifications_title" />
+                        <TextView android:textAppearance="@style/TextAppearance.StatusBar.Title" android:textColor="#ffeeee00" android:id="@id/ongoingTitle" android:background="@drawable/shade_header_background" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/status_bar_ongoing_events_title" />
+                        <TextView android:textAppearance="@style/TextAppearance.StatusBar.Title" android:textColor="#ffeeee00" android:id="@id/latestTitle" android:background="@drawable/shade_header_background" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/status_bar_latest_events_title" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/ongoingItems" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/latestItems" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <ImageView android:layout_width="fill_parent" android:layout_height="310.0dip" android:src="@null" android:scaleType="fitXY" />
+                    </com.android.systemui.statusbar.NotificationLinearLayout>
+                </ScrollView>
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/title_bar_shadow" android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+        <include android:id="@id/qucik_operation_btns" layout="@layout/status_bar_toggle" />
+    </com.spacecaker.SpaceLayOut>
+</com.android.systemui.statusbar.ExpandedView>
