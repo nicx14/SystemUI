@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.ToggleViewGroup android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/zzz_switch_panel_bkg" android:layout_width="fill_parent" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/quick_operation_wifi" layout="@layout/quick_operation_wifi_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_bluetooth" layout="@layout/quick_operation_bluetooth_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_mobile_net" layout="@layout/quick_operation_mobile_net_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_brightness" layout="@layout/quick_operation_brightness_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_flymode" layout="@layout/quick_operation_flymode_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_profile_general" layout="@layout/quick_operation_profile_general_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_profile_silent" layout="@layout/quick_operation_profile_silent_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_profile_meeting" layout="@layout/quick_operation_profile_meeting_view" />
+    <ImageView android:background="@drawable/zzz_tool_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/quick_operation_profile_outdoor" layout="@layout/quick_operation_profile_outdoor_view" />
+</com.android.systemui.statusbar.ToggleViewGroup>
