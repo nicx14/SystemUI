@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ScrollView android:id="@id/scroll" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="320.0px" android:layout_height="100.0px">
+                        <RelativeLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_prof" android:onClick="ProfileButton" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:background="#cc000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:text="ARJHAY" android:singleLine="true" android:layout_alignParentBottom="true" />
+                        </RelativeLayout>
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <com.android.systemui.statusbar.RecentAppButton android:layout_gravity="center" android:id="@id/recent_app_button" android:background="@drawable/stat_recents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Apps" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" android:src="@drawable/set" android:onClick="SettingsButton" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Settings" android:singleLine="true" android:layout_alignParentBottom="true" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="320.0px" android:layout_height="100.0px">
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:src="@drawable/wifiap" android:onClick="WiFiAP" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="WiFiAP" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:src="@drawable/ic_brightness" android:onClick="BrightnessButton" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Brightness" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:src="@drawable/network" android:onClick="MobileNetworkSettings" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Network" android:singleLine="true" android:layout_alignParentBottom="true" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="320.0px" android:layout_height="100.0px">
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:src="@drawable/bluetooth" android:onClick="BluetoothSettings" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Bluetooth" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:src="@drawable/manage" android:onClick="AppsButton" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Manage Apps" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/settings_button" android:background="@drawable/tile_toggle" android:layout_width="106.0px" android:layout_height="100.0px" android:layout_weight="1.0">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0px" android:src="@drawable/battery" android:onClick="Battery_Status" />
+                            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:background="#00000000" android:layout_width="106.0px" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Battery" android:singleLine="true" android:layout_alignParentBottom="true" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
