@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:background="@drawable/quick_operation_item_bg_action" android:layout_width="42.0dip" android:layout_height="40.0dip">
+        <ImageView android:id="@id/quick_operation_profile_general_icon" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/quick_operation_profile_general_on" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/quick_operation_profile_general_bottom_bar" android:background="@drawable/bottom_bar_icon_off" android:layout_width="40.0dip" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ffdddddd" android:gravity="center" android:id="@id/profile_general_text_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_general_name" />
+</LinearLayout>
